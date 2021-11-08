@@ -10,7 +10,7 @@ szukana = int(input('szukana liczba: '))
 x = int(a/2)
 
 while tablica[x]!=szukana:
-    if tablica[x-1] < szukana and tablica[x] > szukana or x==0 or tablica[x] == tablica[-1j]:
+    if tablica[x-1] < szukana and tablica[x] > szukana or x==0 or tablica[x] == tablica[-1]:
         print('nie ma takiej liczby w zbiorze')
         exit()
     elif tablica[x] > szukana:
