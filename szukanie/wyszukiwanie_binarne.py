@@ -1,4 +1,4 @@
-from losowe_liczby import losuj
+from sorted_random import losuj
 
 a = int(input('długość tablicy: '))
 tablica = losuj(a)
