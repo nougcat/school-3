@@ -1,6 +1,6 @@
 from losowe_liczby import losuj
 
-tablica = losuj(10)
+tablica = losuj(20)
 print(tablica)
 
 for x in range(len(tablica)-1):
