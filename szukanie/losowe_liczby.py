@@ -1,15 +1,13 @@
-from random import random
+from random import randint, seed 
 
 
 def losuj(a):
-    import random
-    random.seed()
+    seed()
     liczby_losowe = []
     for x in range(a):
-        liczby_losowe.append(random.randint(0, 99)) 
+        liczby_losowe.append(randint(0, 99)) 
     return liczby_losowe
 
 if __name__ == '__main__':
-    a = 10
-    x = losuj(a)
-    print(x)
+    tablica = losuj(10)
+    print(tablica)
