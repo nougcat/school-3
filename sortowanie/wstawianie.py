@@ -11,7 +11,7 @@ for i in range(1, len(tab)):
         if tab[i] < tab[x]:
             tymczasowe_miejsce = x
     tmp_var = tab[i]
-    print(tab)
+
     for l in range(tymczasowe_miejsce, i+1):  # wrzucamy zmienną do posortowanego zbioru
         tmp_var2 = tab[l]
         tab[l] = tmp_var
