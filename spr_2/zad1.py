@@ -1,4 +1,3 @@
-
 slowo = input("podaj slowo: ")
 print(slowo)
 slowo = list(slowo)

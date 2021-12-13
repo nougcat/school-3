@@ -21,6 +21,6 @@ if __name__=="__main__":
 
         # czy odpowiedzi się zgadzają
         if odp == odp2 == odp3:
-            print('to jest anagram')
+            print('tak')
         else:
-            print('to nie jest anagram')
+            print('nie')
