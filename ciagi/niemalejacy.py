@@ -1,4 +1,5 @@
 import sys
+sys.path.insert(0, '../sortowanie/')
 from losowe_liczby import losuj
 
 
@@ -14,9 +15,6 @@ def dlugosc_ciagu_ros(ciag):
         else:
             aktualny_ciag = 1
     return max_ciag
-
-
-sys.path.insert(0, '../sortowanie/')
 
 dlg_ciagu = int(input('podaj dlugosc ciagu: '))
 ciag = losuj(dlg_ciagu)
