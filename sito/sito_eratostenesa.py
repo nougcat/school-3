@@ -8,10 +8,12 @@ def sito(num):
         if tab[x]:
             for i in range(x*x, num+1, x):
                 tab[i] = False
-            x+=1
-        else: x+=1
-    
+            x += 1
+        else:
+            x += 1
+
     return tab
+
 
 if __name__ == '__main__':
     num = int(input('podaj liczbe: '))
