@@ -15,6 +15,8 @@ def dlugosc_ciagu_ros(ciag):
         else:
             aktualny_ciag = 1
     return max_ciag, indeks+1
+
+    
 if __name__=='__main__':
     dlg_ciagu = int(input('podaj dlugosc ciagu: '))
     ciag = losuj(dlg_ciagu)
