@@ -13,12 +13,12 @@ def to_dec(system, liczba):
     results = 0
     y = 0
     while y < len(liczba):
-        dec_val = int(liczba) * (system ** (len(liczba)) - y - 1)
-        results += dec_val
+        dec_value = int(liczba[y]) * (system ** (len(liczba)) - y - 1)
+        results += dec_value
         y += 1
     print(results)
     return results
-    
+
 
 with open('wuz2-zad1-liczby.txt', 'r') as f:
     for x in f:
@@ -28,11 +28,12 @@ with open('wuz2-zad1-liczby.txt', 'r') as f:
         system = int(linia[0])
         liczba = linia[1]
 
-        dec_val_of_line = to_dec(system, liczba) 
-        suma += dec_val_of_line
+        dec_val = to_dec(system, liczba) 
+        suma += dec_val
 
-        min_and_max(dec_val_of_line, system)
-    
+        min_and_max(dec_val, system)
+
+
 print(f'suma - {suma}')
 print(min)
 print(max)
