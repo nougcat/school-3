@@ -1,7 +1,9 @@
 def silnia(x):
-    if x==1:
-        return 1
-    return silnia(x-1)*x
+    i = 1
+    for i in range(1, x):
+        x = x*i
+        print(i)
+    return x
 
-var = silnia(7)
+var = silnia(int(input('dawaj liczbe ')))
 print(var)
