@@ -1,10 +1,10 @@
 # zamiana jednostek - rekurencja
 
 def CyfryRek(n):
-    if n<10: print(int(n))
+    if n<2: print(int(n))
     else:
-        CyfryRek(n/10)
-        print(int(n%10))
+        CyfryRek(n/2)
+        print(int(n%2))
 
 n = 532
 CyfryRek(n)
