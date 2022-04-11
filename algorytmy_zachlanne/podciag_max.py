@@ -25,7 +25,9 @@ pole = []
 for x in range(wymiary):
     pole += [[randint(1,9) for x in range(wymiary)]]
 suma = 0
-print(pole)
+
+for x in pole:
+    print(x)
 
 koordynaty = [0,0]
 
