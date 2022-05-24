@@ -3,11 +3,12 @@ drugi_wyraz = input('podaj drugi wyraz: ')
 
 podciag = ''
 
+zaczynamy_od = 0
 for x in pierwszy_wyraz:
-    for i in drugi_wyraz:
-        if x == i:
-            print(x, end='')
+    for i in range(zaczynamy_od, len(drugi_wyraz)):
+        if x == drugi_wyraz[i]:
             podciag += x
+            zaczynamy_od = i + 1
             break
-
-print('\n', len(podciag))
+        
+print(f'{podciag} - {len(podciag)}')
