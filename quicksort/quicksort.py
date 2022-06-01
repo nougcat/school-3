@@ -5,13 +5,13 @@ def quicksort(tab):
     else:
         mniejsze_var, wieksze_var = [], []
         wartownik = tab[0]
-        for wartosc in tab:
-            if wartosc < wartownik:
-                mniejsze_var.append(wartosc)
-            else:
-                wieksze_var.append(wartosc)
-
-        return quicksort(mniejsze_var) + print(wartownik) + quicksort(wieksze_var)
+        print(tab)
+        for x in range(1, len(tab)):
+            if tab[x] < wartownik:
+                mniejsze_var.append(tab[x])
+            elif tab[x] > wartownik:
+                wieksze_var.append(tab[x])
+        return quicksort(mniejsze_var), print(wartownik), quicksort(wieksze_var)
 
 
 tab = [5, 14, 6, 7, 3, 2, 17, 33]
